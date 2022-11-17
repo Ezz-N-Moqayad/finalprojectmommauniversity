@@ -1,9 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../../firebase/fb_auth_controller.dart';
 import '../../model/fb_response.dart';
 import '../utils/helpers.dart';
 
+// ignore: camel_case_types
 class Sign_Up extends StatefulWidget {
   const Sign_Up({Key? key}) : super(key: key);
 
@@ -11,16 +11,15 @@ class Sign_Up extends StatefulWidget {
   State<Sign_Up> createState() => _Sign_UpState();
 }
 
+// ignore: camel_case_types
 class _Sign_UpState extends State<Sign_Up> with Helpers {
-  bool _obscureText = true;
-
   // late TextEditingController _fullNameTextController;
   late TextEditingController _emailTextController;
   late TextEditingController _passwordTextController;
+  // ignore: non_constant_identifier_names
   late TextEditingController _UserNameContoller;
   late TextEditingController _phone;
   late TextEditingController _lastname;
-  String _gender = 'M';
 
   @override
   void initState() {
@@ -55,10 +54,10 @@ class _Sign_UpState extends State<Sign_Up> with Helpers {
             // mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 60,
               ),
-              Text(
+              const Text(
                 'Sign Up',
                 style: TextStyle(
                     color: Color(0xff23203F),
@@ -66,11 +65,11 @@ class _Sign_UpState extends State<Sign_Up> with Helpers {
                     fontWeight: FontWeight.bold),
                 textAlign: TextAlign.center,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
-              Padding(
-                padding: const EdgeInsetsDirectional.only(start: 33),
+              const Padding(
+                padding: EdgeInsetsDirectional.only(start: 33),
                 child: Text(
                   'Create an account',
                   style: TextStyle(
@@ -80,7 +79,7 @@ class _Sign_UpState extends State<Sign_Up> with Helpers {
                   textAlign: TextAlign.center,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               Padding(
@@ -93,40 +92,35 @@ class _Sign_UpState extends State<Sign_Up> with Helpers {
                     enabled: true,
                     hintText: 'user name ',
                     filled: true,
-                    fillColor: Color(0xffFFFFFF),
-                    hintStyle: TextStyle(
+                    fillColor: const Color(0xffFFFFFF),
+                    hintStyle: const TextStyle(
                       color: Colors.grey,
                     ),
                     enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.grey, width: 1),
+                      borderSide:
+                          const BorderSide(color: Colors.grey, width: 1),
                       borderRadius: BorderRadius.circular(15),
                     ),
                     // focusColor: Colors.red,
-                    constraints: BoxConstraints(
+                    constraints: const BoxConstraints(
                       maxWidth: 400,
                       maxHeight: 60,
                     ),
-                    // enabledBorder: UnderlineInputBorder(
-                    //   borderSide: BorderSide(
-                    //     color: Colors.black,
-                    //     width: 1,
-                    //   ),
-                    // ),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0xff6A90F2),
                         width: 2,
                       ),
                       borderRadius: BorderRadius.circular(10),
                     ),
-                    prefixIcon: Icon(
+                    prefixIcon: const Icon(
                       Icons.person,
                       color: Color(0xff5D5D5D),
                     ),
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               Padding(
@@ -139,40 +133,35 @@ class _Sign_UpState extends State<Sign_Up> with Helpers {
                     enabled: true,
                     hintText: 'Last name ',
                     filled: true,
-                    fillColor: Color(0xffFFFFFF),
-                    hintStyle: TextStyle(
+                    fillColor: const Color(0xffFFFFFF),
+                    hintStyle: const TextStyle(
                       color: Colors.grey,
                     ),
                     enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.grey, width: 1),
+                      borderSide:
+                          const BorderSide(color: Colors.grey, width: 1),
                       borderRadius: BorderRadius.circular(15),
                     ),
                     // focusColor: Colors.red,
-                    constraints: BoxConstraints(
+                    constraints: const BoxConstraints(
                       maxWidth: 400,
                       maxHeight: 60,
                     ),
-                    // enabledBorder: UnderlineInputBorder(
-                    //   borderSide: BorderSide(
-                    //     color: Colors.black,
-                    //     width: 1,
-                    //   ),
-                    // ),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0xff6A90F2),
                         width: 2,
                       ),
                       borderRadius: BorderRadius.circular(10),
                     ),
-                    prefixIcon: Icon(
+                    prefixIcon: const Icon(
                       Icons.person,
                       color: Color(0xff5D5D5D),
                     ),
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               Padding(
@@ -187,40 +176,35 @@ class _Sign_UpState extends State<Sign_Up> with Helpers {
                     enabled: true,
                     hintText: 'Email  ',
                     filled: true,
-                    fillColor: Color(0xffFFFFFF),
-                    hintStyle: TextStyle(
+                    fillColor: const Color(0xffFFFFFF),
+                    hintStyle: const TextStyle(
                       color: Colors.grey,
                     ),
                     enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.grey, width: 1),
+                      borderSide:
+                          const BorderSide(color: Colors.grey, width: 1),
                       borderRadius: BorderRadius.circular(15),
                     ),
                     // focusColor: Colors.red,
-                    constraints: BoxConstraints(
+                    constraints: const BoxConstraints(
                       maxWidth: 400,
                       maxHeight: 60,
                     ),
-                    // enabledBorder: UnderlineInputBorder(
-                    //   borderSide: BorderSide(
-                    //     color: Colors.black,
-                    //     width: 1,
-                    //   ),
-                    // ),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0xff6A90F2),
                         width: 2,
                       ),
                       borderRadius: BorderRadius.circular(10),
                     ),
-                    prefixIcon: Icon(
+                    prefixIcon: const Icon(
                       Icons.email,
                       color: Color(0xff5D5D5D),
                     ),
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               Padding(
@@ -235,40 +219,35 @@ class _Sign_UpState extends State<Sign_Up> with Helpers {
                     enabled: true,
                     hintText: 'phone  ',
                     filled: true,
-                    fillColor: Color(0xffFFFFFF),
-                    hintStyle: TextStyle(
+                    fillColor: const Color(0xffFFFFFF),
+                    hintStyle: const TextStyle(
                       color: Colors.grey,
                     ),
                     enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.grey, width: 1),
+                      borderSide:
+                          const BorderSide(color: Colors.grey, width: 1),
                       borderRadius: BorderRadius.circular(15),
                     ),
                     // focusColor: Colors.red,
-                    constraints: BoxConstraints(
+                    constraints: const BoxConstraints(
                       maxWidth: 400,
                       maxHeight: 60,
                     ),
-                    // enabledBorder: UnderlineInputBorder(
-                    //   borderSide: BorderSide(
-                    //     color: Colors.black,
-                    //     width: 1,
-                    //   ),
-                    // ),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0xff6A90F2),
                         width: 2,
                       ),
                       borderRadius: BorderRadius.circular(10),
                     ),
-                    prefixIcon: Icon(
+                    prefixIcon: const Icon(
                       Icons.phone,
                       color: Color(0xff5D5D5D),
                     ),
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               Padding(
@@ -283,51 +262,53 @@ class _Sign_UpState extends State<Sign_Up> with Helpers {
                     enabled: true,
                     hintText: 'Password  ',
                     filled: true,
-                    fillColor: Color(0xffFFFFFF),
-                    hintStyle: TextStyle(
+                    fillColor: const Color(0xffFFFFFF),
+                    hintStyle: const TextStyle(
                       color: Colors.grey,
                     ),
                     enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.grey, width: 1),
+                      borderSide:
+                          const BorderSide(color: Colors.grey, width: 1),
                       borderRadius: BorderRadius.circular(15),
                     ),
                     // focusColor: Colors.red,
-                    constraints: BoxConstraints(
+                    constraints: const BoxConstraints(
                       maxWidth: 400,
                       maxHeight: 60,
                     ),
-                    // enabledBorder: UnderlineInputBorder(
-                    //   borderSide: BorderSide(
-                    //     color: Colors.black,
-                    //     width: 1,
-                    //   ),
-                    // ),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0xff6A90F2),
                         width: 2,
                       ),
                       borderRadius: BorderRadius.circular(10),
                     ),
-                    suffixIcon: Icon(
+                    suffixIcon: const Icon(
                       Icons.remove_red_eye,
                       color: Color(0xff5D5D5D),
                     ),
-                    prefixIcon: Icon(
+                    prefixIcon: const Icon(
                       Icons.lock,
                       color: Color(0xff5D5D5D),
                     ),
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               Padding(
                 padding: const EdgeInsetsDirectional.only(start: 35, end: 35),
                 child: ElevatedButton(
                   onPressed: () async => await _performRegister(),
-                  child: Text(
+                  style: ElevatedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                    minimumSize: const Size(328, 60),
+                    primary: const Color(0xff6A90F2),
+                  ),
+                  child: const Text(
                     'Login',
                     style: TextStyle(
                       color: Colors.white,
@@ -336,26 +317,19 @@ class _Sign_UpState extends State<Sign_Up> with Helpers {
                     ),
                     textAlign: TextAlign.center,
                   ),
-                  style: ElevatedButton.styleFrom(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    minimumSize: Size(328, 60),
-                    primary: Color(0xff6A90F2),
-                  ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Padding(
                 padding: const EdgeInsetsDirectional.only(start: 35, end: 35),
                 child: ElevatedButton.icon(
                   onPressed: () {},
-                  icon: Icon(Icons.add),
+                  icon: const Icon(Icons.add),
                   //icon data for elevated button
-                  label: Padding(
-                    padding: const EdgeInsetsDirectional.only(start: 10),
+                  label: const Padding(
+                    padding: EdgeInsetsDirectional.only(start: 10),
                     child: Text(
                       "Login with facebook",
                       style: TextStyle(
@@ -367,33 +341,34 @@ class _Sign_UpState extends State<Sign_Up> with Helpers {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    minimumSize: Size(328, 60),
-                    primary: Color(0xff4267B2),
+                    minimumSize: const Size(328, 60),
+                    primary: const Color(0xff4267B2),
                   ), //label text
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     'Already have an account? ',
                     style: TextStyle(
                       color: Color(0xff9391A4),
                     ),
                   ),
                   TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'Login',
-                        style: TextStyle(
-                          color: Color(0xff23203F),
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      )),
+                    onPressed: () {},
+                    child: const Text(
+                      'Login',
+                      style: TextStyle(
+                        color: Color(0xff23203F),
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ],
@@ -425,9 +400,11 @@ class _Sign_UpState extends State<Sign_Up> with Helpers {
     FbResponse fbResponse = await FbAuthController().CreateAccount(
         email: _emailTextController.text,
         password: _passwordTextController.text);
+    // ignore: use_build_context_synchronously
     showSnackBar(context,
         message: fbResponse.message, error: !fbResponse.states);
     if (fbResponse.states) {
+      // ignore: use_build_context_synchronously
       Navigator.pop(context);
     }
   }
