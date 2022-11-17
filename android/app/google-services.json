@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "647296202095",
+    "project_id": "finalprojectmommauniversity",
+    "storage_bucket": "finalprojectmommauniversity.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:647296202095:android:fbceb009864ab65b1c649a",
+        "android_client_info": {
+          "package_name": "com.example.finalprojectmommauniversity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "647296202095-m0kj5n4e0ht4mi17a8ue9juhhaph89uu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeW5YqZSgmLv-mCH3113SZ_YO6olG17GI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "647296202095-m0kj5n4e0ht4mi17a8ue9juhhaph89uu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
